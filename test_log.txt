@@ -1,0 +1,20 @@
+==== 2026-11-21T22:05:04.347Z
+
+######## mcp-server-tdea
+initialize -> {"name":"shopping-list-mcp-server","version":"1.0.0"}
+tools/list -> addItem, getItems, removeItem
+OK  addItem({"name":"manzana","quantity":3,"category":"fruta","price":1200,"brand":"Campo","description":"roja"})
+    -> "Added 3 of manzana to the shopping list."
+OK  addItem({"name":"leche","quantity":2,"category":"lácteos","price":4500,"brand":"Colanta","description":"entera"})
+    -> "Added 2 of leche to the shopping list."
+OK  getItems({})
+    -> [{"name":"manzana","quantity":3,"category":"fruta","price":1200.0,"brand":"Campo","description":"roja"},{"name":"leche","quantity":2,"category":"lácteos","price":4500.0,"brand":"Colanta","description":"entera"}]
+OK  removeItem({"name":"manzana","quantity":1})
+    -> "Removed 1 of 'manzana'. Remaining quantity: 2."
+OK  getItems({})
+    -> [{"name":"manzana","quantity":2,"category":"fruta","price":1200.0,"brand":"Campo","description":"roja"},{"name":"leche","quantity":2,"category":"lácteos","price":4500.0,"brand":"Colanta","description":"entera"}]
+
+######## mcp-server-banco
+FALLO: timeout initialize
+
+==== FIN PRUEBAS

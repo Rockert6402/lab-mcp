@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "shopping-list-server": {
+      "command": "java",
+      "args": [
+        "-jar",
+        "C:\\Users\\juanj\\OneDrive\\Documentos\\laboratorios\\mcp\\lab-mcp\\lab-mcp\\mcp-server-tdea\\target\\mcp-server-tdea-0.0.1-SNAPSHOT.jar"
+      ]
+    },
+    "bank-server": {
+      "command": "java",
+      "args": [
+        "-jar",
+        "C:\\Users\\juanj\\OneDrive\\Documentos\\laboratorios\\mcp\\lab-mcp\\lab-mcp\\mcp-server-banco\\target\\mcp-server-banco-0.0.1-SNAPSHOT.jar"
+      ],
+      "env": {
+        "DB_USER": "root",
+        "DB_PASSWORD": "ESCRIBE_AQUI_TU_CLAVE_MYSQL"
+      }
+    }
+  }
+}

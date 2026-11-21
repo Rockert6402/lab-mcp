@@ -1,0 +1,23 @@
+{
+  "mcpServers": {
+    "shopping-list-server": {
+      "command": "java",
+      "args": [
+        "-jar",
+        "C:\\Users\\TU_USUARIO\\lab-mcp\\mcp-server-tdea\\target\\mcp-server-tdea-0.0.1-SNAPSHOT.jar"
+      ]
+    },
+    "bank-server": {
+      "command": "java",
+      "args": [
+        "-jar",
+        "C:\\Users\\TU_USUARIO\\lab-mcp\\mcp-server-banco\\target\\mcp-server-banco-0.0.1-SNAPSHOT.jar"
+      ],
+      "env": {
+        "DB_URL": "jdbc:mysql://localhost:3306/banco_mcp?createDatabaseIfNotExist=true&serverTimezone=America/Bogota",
+        "DB_USER": "root",
+        "DB_PASSWORD": "TU_CLAVE_MYSQL"
+      }
+    }
+  }
+}
